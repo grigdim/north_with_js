@@ -1,0 +1,457 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 25vh;
+}
+.closebtn {
+  display: none;
+}
+.menu {
+  min-width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.menu a {
+  font-size: 1.5vw;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  padding: 0.5vw;
+}
+.menu a:hover {
+  transform: scale(1.05);
+}
+#members {
+  background-color: red;
+  color: white;
+}
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+}
+#logo img {
+  max-width: 10vw;
+}
+.search-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  padding: 1vw;
+}
+.search-toggle i {
+  padding: 1vw;
+}
+#toggle {
+  display: none;
+}
+#search:hover,
+#toggle:hover {
+  transform: scale(1.25);
+  cursor: pointer;
+}
+.container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-gap: 0px 0px;
+}
+.container div {
+  min-width: 0.5vw;
+  min-height: 25vw;
+  background-color: rgb(35, 35, 35);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0% 20%;
+  font-size: 1.75vw;
+}
+
+.container div a {
+  color: white;
+  text-decoration: none;
+}
+
+.level1 {
+  background: url(https://crossfitnorthzone.com/wp-content/uploads/2018/02/L1_400x400.jpg);
+}
+.level2 {
+  background: url(https://crossfitnorthzone.com/wp-content/uploads/2018/02/L2_400x400.jpg);
+}
+.level3 {
+  background: url(https://crossfitnorthzone.com/wp-content/uploads/2018/02/L3_400x400.jpg);
+}
+.level4 {
+  background: url(https://crossfitnorthzone.com/wp-content/uploads/2018/02/L4_400x400.jpg);
+}
+.level5 {
+  background: url(https://crossfitnorthzone.com/wp-content/uploads/2018/02/L5_400x400.jpg);
+}
+.burnout {
+  background: url(https://crossfitnorthzone.com/wp-content/uploads/2018/02/Burnout_400x400_inside.jpg);
+}
+.mobility {
+  background: url(https://crossfitnorthzone.com/wp-content/uploads/2018/02/Mobility_400x400.jpg);
+}
+.gymnastics {
+  background: url(https://crossfitnorthzone.com/wp-content/uploads/2018/02/Gymnastic_400x400.jpg);
+}
+.weightlifting {
+  background: url(https://crossfitnorthzone.com/wp-content/uploads/2018/02/WEIGHTLIFTING_400x400_MESA.jpg);
+}
+.quote {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.5vw;
+  text-align: center;
+}
+.quote h2 {
+  padding: 2% 5%;
+}
+.quote p {
+  padding: 2% 15%;
+}
+.perks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  padding: 5%;
+  font-size: 1vw;
+}
+.perks h3 {
+  padding: 2% 10%;
+}
+.perks p {
+  padding: 2% 15%;
+}
+.perks i {
+  padding: 2% 10%;
+}
+.perks h3:hover {
+  color: red;
+}
+.sponsors {
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.sponsors a {
+  padding: 5% 0%;
+}
+.sponsors img {
+  min-width: 10vw;
+}
+
+.contact {
+  background-color: rgb(35, 35, 35);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 5%;
+}
+div.info {
+  max-width: 15%;
+  display: flex;
+  flex-direction: column;
+}
+.info a,
+.contact p {
+  padding: 5%;
+  color: white;
+  height: 25%;
+}
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-transform: uppercase;
+  color: white;
+}
+#contact input,
+textarea {
+  background-color: rgba(35, 35, 35, 0);
+  margin: 2.5%;
+  padding: 2.5%;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+}
+#contact input[type="submit"] {
+  background-color: red;
+  color: white;
+}
+#contact input[type="submit"]:hover,
+.info i:hover {
+  transform: scale(1.025);
+}
+#contact input[type="submit"]:hover {
+  background-color: rgb(130, 0, 0);
+}
+footer {
+  font-size: 1vw;
+  min-height: 15vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer i {
+  color: white;
+}
+footer i:hover {
+  transform: scale(1.5);
+}
+#privacy {
+  color: white;
+  text-decoration: none;
+}
+#privacy:hover {
+  color: gray;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 680px) {
+  header {
+    min-height: 25vh !important;
+  }
+  .search-toggle i {
+    font-size: 2.5vw;
+  }
+  header a {
+    font-size: 1.75vw !important;
+  }
+  #logo {
+    min-width: 15vw !important;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 50%;
+    padding: 0.5vw;
+  }
+  .search-toggle {
+    min-width: 15vw !important;
+  }
+  .container {
+    grid-template-columns: auto auto;
+  }
+  .container div {
+    font-size: 2.5vw;
+    min-height: 45vw;
+  }
+
+  .item3 {
+    grid-area: 2/2/3/3;
+  }
+  .item5 {
+    grid-area: 3/2/4/3;
+  }
+  .item11 {
+    grid-area: 6/2/7/3;
+  }
+  .item13 {
+    grid-area: 7/2/8/3;
+  }
+  #item19,
+  #item20 {
+    display: none;
+  }
+  .contact {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  div.info {
+    max-width: none !important;
+  }
+
+  .sponsors {
+    flex-direction: column !important;
+  }
+  section.quote,
+  section.perks {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 680px) {
+  header {
+    min-height: 20vh !important;
+  }
+  #logo,
+  .search-toggle {
+    width: 25%;
+  }
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.875);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    text-transform: uppercase;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 2vw;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-weight: bold;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1 !important;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .search-toggle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .container {
+    grid-template-columns: auto;
+  }
+  .container div {
+    font-size: 2.5vw;
+  }
+  div.info {
+    flex-direction: column !important;
+    max-width: none !important;
+  }
+  section.quote,
+  section.perks {
+    font-size: 2.5vw;
+  }
+  .item2,
+  .item4,
+  .item5,
+  .item7,
+  .item12,
+  .item10,
+  .item13,
+  .item15,
+  .item18 {
+    min-width: 470px;
+    min-height: 50vh !important;
+  }
+  .item1 {
+    grid-area: 1/1/2/2;
+  }
+  .item2 {
+    grid-area: 2/1/3/2;
+  }
+  .item3 {
+    grid-area: 3/1/4/2;
+  }
+  .item4 {
+    grid-area: 4/1/5/2;
+  }
+  .item6 {
+    grid-area: 5/1/6/2;
+  }
+  .item5 {
+    grid-area: 6/1/7/2;
+  }
+  .item8 {
+    grid-area: 7/1/8/2;
+  }
+  .item7 {
+    grid-area: 8/1/9/2;
+  }
+  .item9 {
+    grid-area: 9/1/10/2;
+  }
+  .item10 {
+    grid-area: 10/1/11/2;
+  }
+  .item11 {
+    grid-area: 11/1/12/2;
+  }
+  .item12 {
+    grid-area: 12/1/13/2;
+  }
+  .item14 {
+    grid-area: 13/1/14/2;
+  }
+  .item13 {
+    grid-area: 14/1/15/2;
+  }
+  .item16 {
+    grid-area: 15/1/16/2;
+  }
+  .item15 {
+    grid-area: 16/1/17/2;
+  }
+  .item17 {
+    grid-area: 17/1/18/2;
+  }
+  .item18 {
+    grid-area: 18/1/19/2;
+  }
+  #item19,
+  #item20 {
+    display: none;
+  }
+  .perks {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .sponsors {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .sponsors a img {
+    min-width: 50% !important;
+  }
+  .contact {
+    flex-direction: column !important;
+    justify-content: space-evenly !important;
+    align-items: center !important;
+  }
+  .contact div {
+    padding: 5%;
+  }
+  div.info {
+    flex-direction: column !important;
+    justify-content: space-evenly !important;
+    align-items: flex-start !important;
+  }
+}
